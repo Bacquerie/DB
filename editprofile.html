@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html>
+	<head>
+		<link rel="stylesheet/less" href="styles/index.less"/>
+		<script src="scripts/less.min.js"></script>
+		
+		<title></title>
+	</head>
+	
+	<body id="app">
+		<form class="form edit-profile">
+			<fieldset>
+				<legend>Edit GTOnline User Profile</legend>
+				<header>
+					<span class="title">User Name</span>
+				</header>
+				<section class="inputs">
+					<article class="label-value">
+						<label>Sex</label>
+						<select class="value">
+							<option>Male</option>
+							<option>Female</option>
+						</select>
+					</article>
+					<article class="label-value">
+						<label>Birthdate</label>
+						<input class="value" type="date" placeholder="birthdate">
+					</article>
+					<input type="text" placeholder="current city">
+					<input type="text" placeholder="hometown">
+					<article class="label-value">
+						<label>Interests</label>
+						<input class="value" type="text" placeholder="add a new interest">
+						<button type="button">Add</button>
+					</article>
+					<section class="list interests">
+							<span>Tennis</span>
+							<span>Watching Inception Over and Over Again</span>
+							<span>Seinfeld</span>
+							<span>Binge-Watch Netflix</span>
+						</section>
+				</section>
+				<article class="form subform">
+					<header>
+						<span class="title">Education</span>
+						<button type="button">Add School</button>
+					</header>
+					<section class="inputs">
+						<article class="label-value">
+							<label>School</label>
+							<select class="value">
+								<option>Georgia Institute of Technology</option>
+								<option>Massachussetts Institute of Technology</option>
+							</select>
+						</article>
+						<article class="label-value">
+							<label>Year Graduated</label>
+							<input class="value" type="number" min="1900" max="2018" value="2018">
+						</article>
+						<section class="buttons">
+							<button type="button">Delete School</button>
+						</section>
+					</section>
+					<section class="inputs">
+						<article class="label-value">
+							<label>School</label>
+							<select class="value">
+								<option>Georgia Institute of Technology</option>
+								<option>Massachussetts Institute of Technology</option>
+							</select>
+						</article>
+						<article class="label-value">
+							<label>Year Graduated</label>
+							<input class="value" type="number" min="1900" max="2018" value="2018">
+						</article>
+						<section class="buttons">
+							<button type="button">Delete School</button>
+						</section>
+					</section>
+				</article>
+				<article class="form subform">
+					<header>
+						<span class="title">Professional</span>
+						<button type="button">Add Job</button>
+					</header>
+					<section class="inputs">
+						<article class="label-value">
+							<label>Employer</label>
+							<select class="value">
+								<option>Google</option>
+								<option>Amazon</option>
+							</select>
+						</article>
+						<input class="value" type="text" placeholder="job title">
+						<section class="buttons">
+							<button type="button">Delete Job</button>
+						</section>
+					</section>
+				</article>
+				<section class="buttons">
+					<button class="main" type="button">Save</button>
+					<button type="button">Cancel</button>
+				</section>
+			</fieldset>
+		</form>
+	</body>
+</html>
